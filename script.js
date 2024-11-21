@@ -3,16 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const factDisplay = document.getElementById('fact-display');
     const getFactButton = document.getElementById('get-fact');
 
-    // Function to fetch random fact from your Express server
-    async function getRandomFact() {
-        try {
-            const response = await fetch('http://localhost:3000/facts/random');
-            const data = await response.json();
-            factDisplay.textContent = data.fact;
-        } catch (error) {
-            factDisplay.textContent = 'Failed to load fact. Please try again.';
-            console.error('Error:', error);
-        }
+    const facts = [
+        "I am 20 years old and passionate about exploring the natural world.",
+        "I enjoy spending time in nature and observing wildlife in their habitat.",
+        "My favorite outdoor activities include hiking and bird watching.",
+        "I actively participate in local environmental conservation projects.",
+        "I dream of visiting all national parks to experience diverse ecosystems."
+    ];
+
+    // Function to get random fact from the facts array
+    function getRandomFact() {
+        const randomFact = facts[Math.floor(Math.random() * facts.length)];
+        factDisplay.textContent = randomFact;
     }
 
     // Load initial fact
