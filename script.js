@@ -4,11 +4,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const getFactButton = document.getElementById('get-fact');
 
     const facts = [
-        "I am 20 years old and passionate about exploring the natural world.",
-        "I enjoy spending time in nature and observing wildlife in their habitat.",
-        "My favorite outdoor activities include hiking and bird watching.",
-        "I actively participate in local environmental conservation projects.",
-        "I dream of visiting all national parks to experience diverse ecosystems."
+        "I am 20 years old and passionate about exploring the natural world",
+        "I enjoy spending time in nature and observing wildlife in their habitat",
+        "My favorite outdoor activities include hiking and bird watching",
+        "I actively participate in local environmental conservation projects",
+        "I dream of visiting all national parks to experience diverse ecosystems"
     ];
 
     // Function to get random fact from the facts array
